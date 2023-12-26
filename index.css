@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&family=Poppins:wght@700&display=swap');
+@font-face {
+    font-family: icon;
+    src: url("./merged.ttf");
+}
+@media (min-width: 1200px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./images/weather.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.349);
+        background-blend-mode: overlay;
+    }
+    .appCont{
+        width: 380px;
+        height: 440px;
+        /* border: solid 1px red; */
+        display: grid;
+        grid-template-rows: 90px 140px 120px 90px;
+    }
+    .srchBox{
+        display: grid;
+        grid-template-columns: 1fr .2fr;
+    }
+    .srch{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 10px; */
+    }
+    input{
+        height: 50px;
+        /* height: 90%; */
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        outline: none;
+        border: solid 1px white;
+        border-radius: 20px;
+        color: white;
+        padding-left: 20px;
+        font-family: 'Poppins', sans-serif;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    ::placeholder {
+        color: white;
+    }
+    .icBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .icon{
+        font-family: icon;
+        color: white;
+        font-size: 32px;
+        cursor: pointer;
+    }
+    .weatherImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .weatherImage img{
+        height: 140px;
+        width: 140px;
+    }
+    .temp{
+        height: 60px;
+        line-height: 60px;
+        font-size: 60px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .degre{
+       
+        font-size: 30px;
+        height: 50px;
+        line-height: 0;
+        padding-top: 20px;
+       
+    }
+    .title{
+        text-align: center;
+        height: 60px;
+        font-size: 30px;
+        line-height: 60px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .vag{
+        display: grid;
+        grid-template-columns: .2fr 1fr;
+        column-gap: 10px;
+        padding-top: 20px;
+    }
+    .imgBox{
+        width: 100%;
+        height: 100%;
+        line-height: 90px;
+        text-align: start;
+    }
+    .imgBox img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .descrip{
+    
+    }
+    .ratio{
+        font-size: 25px;
+        width: 100%;
+        height: 48%;
+        padding-top: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .rTitle{
+        width: 100%;
+        height: 52%;
+        display: block;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .vag2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        padding-top: 20px;
+    }
+    .imgBox2{
+        width: 100%;
+        height: 100%;
+        line-height: 90px;
+        text-align: end;
+    }
+    .imgBox2 img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .descrip2{
+    
+    }
+    .ratio2{
+        font-size: 25px;
+        width: 100%;
+        height: 48%;
+        padding-top: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .rTitle2{
+        width: 100%;
+        height: 52%;
+        display: block;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .authorDetails{
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+    }
+    .author, .authTitle{
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 4px;
+        text-transform:uppercase ;
+        font-size: 10px;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media (min-width: 300px) and (max-width: 1199px) { 
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url("./images/weather.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.349);
+        background-blend-mode: overlay;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 50px;
+    }
+    .appCont{
+        width: 380px;
+        height: 440px;
+        /* border: solid 1px red; */
+        display: grid;
+        grid-template-rows: 90px 140px 120px 90px;
+    }
+    .srchBox{
+        display: grid;
+        grid-template-columns: 1fr .2fr;
+    }
+    .srch{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 10px; */
+    }
+    input{
+        height: 50px;
+        /* height: 90%; */
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        outline: none;
+        border: solid 1px white;
+        border-radius: 20px;
+        color: white;
+        padding-left: 20px;
+        font-family: 'Poppins', sans-serif;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    ::placeholder {
+        color: white;
+    }
+    .icBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .icon{
+        font-family: icon;
+        color: white;
+        font-size: 32px;
+        cursor: pointer;
+    }
+    .weatherImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .weatherImage img{
+        height: 140px;
+        width: 140px;
+    }
+    .temp{
+        height: 60px;
+        line-height: 60px;
+        font-size: 60px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .degre{
+       
+        font-size: 30px;
+        height: 50px;
+        line-height: 0;
+        padding-top: 20px;
+       
+    }
+    .title{
+        text-align: center;
+        height: 60px;
+        font-size: 30px;
+        line-height: 60px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .vag{
+        display: grid;
+        grid-template-columns: .2fr 1fr;
+        column-gap: 10px;
+        padding-top: 20px;
+    }
+    .imgBox{
+        width: 100%;
+        height: 100%;
+        line-height: 90px;
+        text-align: start;
+    }
+    .imgBox img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .descrip{
+    
+    }
+    .ratio{
+        font-size: 25px;
+        width: 100%;
+        height: 48%;
+        padding-top: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .rTitle{
+        width: 100%;
+        height: 52%;
+        display: block;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .vag2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        padding-top: 20px;
+    }
+    .imgBox2{
+        width: 100%;
+        height: 100%;
+        line-height: 90px;
+        text-align: end;
+    }
+    .imgBox2 img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .descrip2{
+    
+    }
+    .ratio2{
+        font-size: 25px;
+        width: 100%;
+        height: 48%;
+        padding-top: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .rTitle2{
+        width: 100%;
+        height: 52%;
+        display: block;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+    .authorDetails{
+       position: absolute;
+       bottom: 10px;
+       text-align: center;
+    }
+    .author, .authTitle{
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 4px;
+        text-transform:uppercase ;
+        font-size: 10px;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+}
